@@ -31,7 +31,7 @@
               <p class="description"><%= truncate(episode.description, length: 160) %></p>
               <div class="authorized_links">
                 <%= link_to 'Edit', edit_podcast_episode_path(@podcast, episode) %>
-                <%= link_to 'Delete', podcast_episode_path(@podcast, episode), method: :destroy, data: {confirm: 'Are you sure?'} %>
+                <%= link_to 'Delete', podcast_episode_path(@podcast, episode), method: :delete, data: {confirm: 'Are you sure?'} %>
               </div>
             </div>
           </li>
