@@ -1,7 +1,7 @@
 <div id="podcast_show">
   <div id="show_banner">
       <div class="wrapper_skinny">
-        <h1>The Rocketship Podcast Dashboard</h1>           
+        <h1><%= @podcast.title %> Dashboard</h1>           
       </div>
   </div>
 
@@ -23,7 +23,7 @@
           <li class="clearfix">
             <div class="episode_thumbnail">
               <a href="#">
-                <img src="images/pieter_levels.jpg" alt="Pieter Levels">
+                <%= image_tag episode.episode_thumbnail.url(:medium) %>
               </a>
             </div>
             <div class="episode_overview">
