@@ -11,8 +11,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5', '>= 3.5.6'
-gem "paperclip", git: "https://github.com/thoughtbot/paperclip.git", branch: "master"
-gem 'aws-sdk', '~> 2.2', '>= 2.2.16'
+gem 'paperclip', '~> 4.3', '>= 4.3.5'
+gem 'aws-sdk', '< 2.0'
 
 group :development, :test do
   gem 'byebug'
